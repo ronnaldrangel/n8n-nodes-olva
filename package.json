@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-olva",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nodo custom de n8n para consumir la Olva API (tracking, agencias, ubicaciones y envíos)",
   "main": "dist/nodes/OlvaApi/OlvaApi.node.js",
   "files": [
