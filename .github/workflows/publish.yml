@@ -29,3 +29,7 @@ jobs:
 
       - name: Publicar en npm
         run: npm publish --access public --provenance
+        env:
+          # Token de npm (repo → Settings → Secrets → Actions → NPM_TOKEN).
+          # Si borras el secreto, cae al modo trusted publishing (OIDC).
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
