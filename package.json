@@ -1,0 +1,43 @@
+{
+  "name": "n8n-nodes-olva",
+  "version": "1.0.0",
+  "description": "Nodo custom de n8n para consumir la Olva API (tracking, agencias, ubicaciones y envíos)",
+  "main": "dist/nodes/OlvaApi/OlvaApi.node.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && gulp",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "olva",
+    "courier",
+    "peru",
+    "tracking"
+  ],
+  "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/OlvaApiApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/OlvaApi/OlvaApi.node.js"
+    ]
+  },
+  "dependencies": {
+    "n8n-workflow": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "gulp": "^4.0.2",
+    "typescript": "^5.6.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "node": "n8n-nodes-olva",
+  "nodeVersion": "1",
+  "codexVersion": "1",
+  "categories": ["Data & Storage", "Communication"],
+  "resources": {
+    "credentialDocumentationUrl": "https://olva-api.lat/docs"
+  },
+  "alias": ["Olva", "Olva Courier", "Courier", "Perú", "Tracking"]
+}
